@@ -42,18 +42,18 @@ def run():
         print('*' * 12)
 
         print(f'User >> {user_win}')
-        print(f'çomputer >> {computer_win}')
+        print(f'Computer >> {computer_win}')
 
         user_option, computer_option = choose_option()
 
         user_win, computer_win = rules(user_option, computer_option, user_win, computer_win)
 
         if user_win == 2:
-            print('El juego ha terminado, ¡Felicidades has ganado!')
+            print('El juego ha terminado')
         elif computer_win == 2:
-            print('El juego ha terminado, ¡Lo siento, has perdido!')
-
-        rounds += 1  
+            print('El juego ha terminado')
+        else:
+            rounds += 1  
 
 if __name__ == '__main__':
     run()
